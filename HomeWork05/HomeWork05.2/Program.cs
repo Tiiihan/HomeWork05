@@ -1,13 +1,17 @@
-﻿int userInput = 0;
-
-Console.Write("Enter number: ");
-
-try
+﻿try
 {
-	userInput = int.Parse(Console.ReadLine());
-	Console.WriteLine($"Entered number: {userInput}");
+	int userInput = int.Parse(Console.ReadLine());
+	Console.WriteLine($"You entered correct number: {userInput}");
+}
+catch (FormatException ex)
+{
+	Console.WriteLine(ex.Message);
+}
+catch (OverflowException ex)
+{
+	Console.WriteLine(ex.Message);
 }
 catch (Exception ex)
 {
-	Console.WriteLine(ex.Message);
+    Console.WriteLine(ex.Message);
 }
