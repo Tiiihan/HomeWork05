@@ -16,7 +16,7 @@ while (!(isInt1 && isInt2))
 
 try
 {
-	double result = (double)firstNumber / secondNumber;
+	int result = firstNumber / secondNumber;
 
 	Console.WriteLine($"\nResult: {firstNumber} / {secondNumber} = {result}");
 }
