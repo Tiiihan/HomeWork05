@@ -17,8 +17,7 @@ while (!(isInt1 && isInt2))
 try
 {
 	int result = firstNumber / secondNumber;
-
-	Console.WriteLine($"\nResult: {firstNumber} / {secondNumber} = {result}");
+	Console.WriteLine($"\n {firstNumber} / {secondNumber} = {firstNumber / secondNumber}");
 }
 catch (DivideByZeroException ex)
 {

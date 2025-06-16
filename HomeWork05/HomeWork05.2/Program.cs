@@ -1,16 +1,13 @@
-﻿Console.Write("Enter number: ");
-bool isInt = int.TryParse(Console.ReadLine(), out int userInput);
+﻿int userInput = 0;
+
+Console.Write("Enter number: ");
 
 try
 {
-	if (!isInt)
-	{
-		throw new Exception("You entered invalid data");
-	}
-	
+	userInput = int.Parse(Console.ReadLine());
 	Console.WriteLine($"Entered number: {userInput}");
 }
 catch (Exception ex)
 {
-    Console.WriteLine(ex.Message);
+	Console.WriteLine(ex.Message);
 }
